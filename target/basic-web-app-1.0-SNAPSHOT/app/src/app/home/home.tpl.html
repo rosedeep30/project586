@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1>Matador Blogs</h1>
+  
+  <div class="btn-group" ng-hide="isLoggedIn()">
+    <a ui-sref="login" class="btn btn-large btn-default">
+      <i class="fa fa-book"></i>
+      Sign In
+    </a>
+    <a ui-sref="register" class="btn btn-large btn-success">
+      <i class="fa fa-download"></i>
+      Sign Up
+    </a>
+  </div>
+
+    <div class="btn-group" ng-show="isLoggedIn()">
+        <a ng-click="logout()" class="btn btn-large btn-default">
+            <i class="fa fa-book"></i>
+            Logout
+        </a>
+    </div>
+
+
+</div>
+
+
